@@ -5,8 +5,12 @@ name0 = list_name[0]
 name1 = list_name[1].swapcase()
 name2 = list_name[2].swapcase()
 name3 = list_name[3]
+index0 = name0.split(" ")
+index1 = name1.split(" ")
+index2 = name2.split(" ")
+index3 = name3.split(" ")
 
-print("Привет, " + name0[20:25]+ "!")
-print("Привет, " + name1[18:25].capitalize()+ "!")
-print("Привет, " + name2[23:30].capitalize()+ "!")
-print("Привет, " + name3[9:15].capitalize()+ "!")
+print("Привет, " + index0[-1].capitalize()+ "!")
+print("Привет, " + index1[-1].capitalize()+ "!")
+print("Привет, " + index2[-1].capitalize()+ "!")
+print("Привет, " + index3[-1].capitalize()+ "!")
