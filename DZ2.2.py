@@ -3,7 +3,15 @@ numbers =[]
 
 for char in result_array:
     if char.isdigit():
-        numbers.append(int(char))
-b = ['"0{}"'.format(number) for number in numbers]
+        if len(char) == 1:
+            char = f"'{int(char):02}"
+        elif len(char) == 2:
+            char = f"'{int(char)}"
+    elif char.find ('+') != -1 or char.find('-') != -1:
+        if char.isdigit() < 10:
+            char = f"'{char[0]}{int(char):02}'"
+        else:
+            char = f"'{char[0]}{int(char)}'"
+    print(f'{char}', end=" ")
 
 
