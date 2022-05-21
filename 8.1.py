@@ -20,4 +20,4 @@ def email_parse(email_address):
 
     return dict_info
 #print(email_parse('andreilashewitch@icloud.com'))
-print(email_parse('andreilashewitch@icloud.com'))
+print(email_parse('andrei.lashewitch@icloud.com'))
